@@ -1,0 +1,9 @@
+D:/On-Device LLM/build/CMakeFiles/llm_core.dir
+D:/On-Device LLM/build/CMakeFiles/test_hardware.dir
+D:/On-Device LLM/build/CMakeFiles/test_memory.dir
+D:/On-Device LLM/build/CMakeFiles/on_device_llm_http_service.dir
+D:/On-Device LLM/build/CMakeFiles/on_device_llm_service.dir
+D:/On-Device LLM/build/CMakeFiles/RUN_TESTS.dir
+D:/On-Device LLM/build/CMakeFiles/INSTALL.dir
+D:/On-Device LLM/build/CMakeFiles/ALL_BUILD.dir
+D:/On-Device LLM/build/CMakeFiles/ZERO_CHECK.dir

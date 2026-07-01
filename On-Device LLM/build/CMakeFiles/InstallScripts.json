@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/On-Device LLM/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

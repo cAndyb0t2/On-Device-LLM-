@@ -1,0 +1,108 @@
+Start testing: Jun 18 12:30 India Standard Time
+----------------------------------------------------------
+1/2 Testing: HardwareDetection
+1/2 Test: HardwareDetection
+Command: "D:/On-Device LLM/build/Release/test_hardware.exe"
+Directory: D:/On-Device LLM/build
+"HardwareDetection" start time: Jun 18 12:30 India Standard Time
+Output:
+----------------------------------------------------------
+=== Hardware Detection Test ===
+Platform: 2
+CPU Cores: 4
+Total RAM: 7 GB
+Available RAM: 1 GB
+Device Tier: 0
+✓ All hardware detection tests passed
+
+=== LLM Runtime Lazy Allocation Test ===
+Initial allocated memory: 0 bytes
+Detected hardware tier: 0
+Memory after initialization: 0 bytes
+
+--- Starting Generation ---
+Memory stats before generation:
+  Total RAM: 1669 MB
+  Allocated: 0 MB
+  Free:      1669 MB
+  Pressure:  0
+Attempting to allocate 256 MB for weights and 32 MB for KV cache...
+Selecting optimal backend. Supported options: CPU DIRECTML CUDA 
+Initializing CPU Backend (llama.cpp) with model: models/base_7b.gguf and context limit: 512
+Memory stats during generation (RAM allocated):
+  Total RAM: 1669 MB
+  Allocated: 288 MB
+  Free:      1381 MB
+  Pressure:  0
+Inference completed. Response: "Generated response (stub) using backend: llama.cpp"
+Deallocating backend weight memory...
+Deallocating KV Cache memory...
+Memory stats after generation (RAM released):
+  Total RAM: 1669 MB
+  Allocated: 0 MB
+  Free:      1669 MB
+  Pressure:  0
+---------------------------
+
+Generate response: Generated response (stub) using backend: llama.cpp
+Memory after generate: 0 bytes
+
+--- Starting Streaming Generation ---
+Memory stats before streaming:
+  Total RAM: 1669 MB
+  Allocated: 0 MB
+  Free:      1669 MB
+  Pressure:  0
+Attempting to allocate 256 MB for weights and 32 MB for KV cache...
+Selecting optimal backend. Supported options: CPU DIRECTML CUDA 
+Initializing CPU Backend (llama.cpp) with model: models/base_7b.gguf and context limit: 512
+Memory stats during streaming (RAM allocated):
+  Total RAM: 1669 MB
+  Allocated: 288 MB
+  Free:      1381 MB
+  Pressure:  0
+Token1 Token2 (streamed from llama.cpp)Deallocating backend weight memory...
+Deallocating KV Cache memory...
+Memory stats after streaming (RAM released):
+  Total RAM: 1669 MB
+  Allocated: 0 MB
+  Free:      1669 MB
+  Pressure:  0
+-------------------------------------
+
+
+Memory after streaming: 0 bytes
+✓ All LLM runtime lazy allocation tests passed
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"HardwareDetection" end time: Jun 18 12:30 India Standard Time
+"HardwareDetection" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: MemoryManager
+2/2 Test: MemoryManager
+Command: "D:/On-Device LLM/build/Release/test_memory.exe"
+Directory: D:/On-Device LLM/build
+"MemoryManager" start time: Jun 18 12:30 India Standard Time
+Output:
+----------------------------------------------------------
+=== Memory Manager Test ===
+Testing basic allocation...
+✓ Basic allocation tests passed.
+Testing memory pressure and callbacks...
+Memory allocation failed: 100 bytes requested, 50 bytes available
+✓ Memory pressure and callback tests passed.
+Testing stubs...
+✓ Stub tests passed.
+✓ All memory manager tests passed
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"MemoryManager" end time: Jun 18 12:30 India Standard Time
+"MemoryManager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 18 12:30 India Standard Time

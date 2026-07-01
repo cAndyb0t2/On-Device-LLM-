@@ -1,0 +1,6 @@
+D:\On-Device LLM\src\hardware\hardware_detector.cpp;D:\On-Device LLM\build\llm_core.dir\Release\hardware_detector.obj
+D:\On-Device LLM\src\memory\memory_manager.cpp;D:\On-Device LLM\build\llm_core.dir\Release\memory_manager.obj
+D:\On-Device LLM\src\core\runtime.cpp;D:\On-Device LLM\build\llm_core.dir\Release\runtime.obj
+D:\On-Device LLM\src\hal\backend.cpp;D:\On-Device LLM\build\llm_core.dir\Release\backend.obj
+D:\On-Device LLM\src\hal\backends\cpu_backend.cpp;D:\On-Device LLM\build\llm_core.dir\Release\cpu_backend.obj
+D:\On-Device LLM\platforms\windows\hardware_win.cpp;D:\On-Device LLM\build\llm_core.dir\Release\hardware_win.obj

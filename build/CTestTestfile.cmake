@@ -1,0 +1,36 @@
+# CMake generated Testfile for 
+# Source directory: D:/On-Device LLM
+# Build directory: D:/On-Device LLM/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test([=[HardwareDetection]=] "D:/On-Device LLM/build/Debug/test_hardware.exe")
+  set_tests_properties([=[HardwareDetection]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/On-Device LLM/CMakeLists.txt;68;add_test;D:/On-Device LLM/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test([=[HardwareDetection]=] "D:/On-Device LLM/build/Release/test_hardware.exe")
+  set_tests_properties([=[HardwareDetection]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/On-Device LLM/CMakeLists.txt;68;add_test;D:/On-Device LLM/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test([=[HardwareDetection]=] "D:/On-Device LLM/build/MinSizeRel/test_hardware.exe")
+  set_tests_properties([=[HardwareDetection]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/On-Device LLM/CMakeLists.txt;68;add_test;D:/On-Device LLM/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test([=[HardwareDetection]=] "D:/On-Device LLM/build/RelWithDebInfo/test_hardware.exe")
+  set_tests_properties([=[HardwareDetection]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/On-Device LLM/CMakeLists.txt;68;add_test;D:/On-Device LLM/CMakeLists.txt;0;")
+else()
+  add_test([=[HardwareDetection]=] NOT_AVAILABLE)
+endif()
+if(CTEST_CONFIGURATION_TYPE MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
+  add_test([=[MemoryManager]=] "D:/On-Device LLM/build/Debug/test_memory.exe")
+  set_tests_properties([=[MemoryManager]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/On-Device LLM/CMakeLists.txt;72;add_test;D:/On-Device LLM/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
+  add_test([=[MemoryManager]=] "D:/On-Device LLM/build/Release/test_memory.exe")
+  set_tests_properties([=[MemoryManager]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/On-Device LLM/CMakeLists.txt;72;add_test;D:/On-Device LLM/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
+  add_test([=[MemoryManager]=] "D:/On-Device LLM/build/MinSizeRel/test_memory.exe")
+  set_tests_properties([=[MemoryManager]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/On-Device LLM/CMakeLists.txt;72;add_test;D:/On-Device LLM/CMakeLists.txt;0;")
+elseif(CTEST_CONFIGURATION_TYPE MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
+  add_test([=[MemoryManager]=] "D:/On-Device LLM/build/RelWithDebInfo/test_memory.exe")
+  set_tests_properties([=[MemoryManager]=] PROPERTIES  _BACKTRACE_TRIPLES "D:/On-Device LLM/CMakeLists.txt;72;add_test;D:/On-Device LLM/CMakeLists.txt;0;")
+else()
+  add_test([=[MemoryManager]=] NOT_AVAILABLE)
+endif()

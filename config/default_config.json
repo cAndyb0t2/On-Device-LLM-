@@ -1,0 +1,70 @@
+{
+  "format_version": "1.0",
+  "model_metadata": {
+    "name": "Offline LLM Base",
+    "description": "Privacy-first base model for on-device inference",
+    "knowledge_cutoff": "2024-01",
+    "version": "1.0.0"
+  },
+  "tiers": {
+    "low_end": {
+      "model_size_params": "1.5B",
+      "quantization": "4-bit GGUF",
+      "max_context_length": 512,
+      "target_devices": ["Raspberry Pi 4", "older smartphones"]
+    },
+    "mid_range": {
+      "model_size_params": "7B",
+      "quantization": "4-bit GGUF",
+      "max_context_length": 2048,
+      "target_devices": ["modern smartphones", "laptops"]
+    },
+    "high_end": {
+      "model_size_params": "13B",
+      "quantization": "8-bit GGUF",
+      "max_context_length": 4096,
+      "target_devices": ["gaming laptops", "workstations"]
+    }
+  },
+  "modules": [
+    {
+      "type": "BASE_MODEL",
+      "priority": 10,
+      "optional": false,
+      "path": "models/base_model.gguf",
+      "memory_estimate_mb": 4096
+    },
+    {
+      "type": "REASONING",
+      "priority": 5,
+      "optional": true,
+      "path": "models/reasoning_adapter.gguf",
+      "memory_estimate_mb": 512
+    },
+    {
+      "type": "RETRIEVAL",
+      "priority": 3,
+      "optional": true,
+      "path": "models/retrieval_encoder.gguf",
+      "memory_estimate_mb": 256
+    }
+  ],
+  "privacy": {
+    "enforce_local_only": true,
+    "encrypt_user_data": true,
+    "data_retention_days": 30,
+    "audit_logging": true
+  },
+  "inference": {
+    "default_context_length": 2048,
+    "default_max_tokens": 256,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "use_beam_search": false
+  },
+  "hardware": {
+    "thermal_throttle_threshold_celsius": 80,
+    "battery_threshold_for_degradation_percent": 20,
+    "min_free_ram_for_loading_optional_modules_mb": 512
+  }
+}
