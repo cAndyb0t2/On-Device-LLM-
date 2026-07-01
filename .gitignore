@@ -1,0 +1,36 @@
+# Build folders
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.ipch
+
+# Object files
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.pdb
+
+# Models
+models/
+*.gguf
+
+# Archives
+*.zip
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
